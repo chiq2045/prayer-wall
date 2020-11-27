@@ -77,8 +77,10 @@ module.exports = {
       auth: 'http://localhost:3000/auth'
     },
     publicPath: '/assets/',
-    lazy: true
-
+    lazy: true,
+    port: 9000,
+    historyApiFallback: true,
+    hot: true
   },
   plugins
 };
