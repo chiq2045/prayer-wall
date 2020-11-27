@@ -4,7 +4,9 @@
   "description": "Prayer Wall is a Web App that facilitates sharing prayer requests with each other.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "start": "webpack --progress --color",
+    "dev": "webpack-dev-server"
   },
   "author": "",
   "license": "MIT",
