@@ -1,9 +1,14 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest/globals": true
+    },
+    "globals": {
+        "shallow": "readonly"
     },
     "extends": [
+        "plugin:jest/recommended",
         "plugin:react/recommended",
         "standard"
     ],
@@ -15,7 +20,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "enzyme"
     ],
     "rules": {
         "semi": [2, "always"]
