@@ -15,11 +15,11 @@ const plugins = [
 
 module.exports = {
   mode,
-  entry: resolve(__dirname, 'src', 'index.js'),
+  entry: resolve(__dirname, 'src', 'index.jsx'),
   output: {
-    path: devMode ? resolve(__dirname, 'devDist') : resolve(__dirname, 'dist'),
+    path: resolve(__dirname, 'dist'),
     filename: devMode ? '[name].bundle.js' : '[name].[contenthash].js',
-    publicPath: '/assets'
+    publicPath: '/'
   },
   optimization: {
     runtimeChunk: 'single',
@@ -36,7 +36,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\\.jsx?$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: [
           {
@@ -45,16 +45,13 @@ module.exports = {
               presets: [
                 '@babel/preset-env',
                 '@babel/preset-react'
-              ],
-              plugins: [
-                '@pabel/plugin-transform-runtime'
               ]
             }
           }
         ]
       },
       {
-        test: /\\.css$/i,
+        test: /\.css$/i,
         use: [
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
@@ -76,8 +73,7 @@ module.exports = {
       api: 'http://localhost:3000/pwall',
       auth: 'http://localhost:3000/auth'
     },
-    publicPath: '/assets/',
-    lazy: true,
+    publicPath: '/',
     port: 9000,
     historyApiFallback: true,
     hot: true
