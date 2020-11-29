@@ -4,9 +4,6 @@
         "es2021": true,
         "jest/globals": true
     },
-    "globals": {
-        "shallow": "readonly"
-    },
     "extends": [
         "plugin:jest/recommended",
         "plugin:react/recommended",
@@ -20,8 +17,7 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react",
-        "enzyme"
+        "react"
     ],
     "rules": {
         "semi": [2, "always"]
