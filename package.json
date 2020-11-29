@@ -7,8 +7,7 @@
     "test": "jest --watchAll --runInBand",
     "start": "npm run build",
     "dev": "NODE_ENV=development webpack-dev-server",
-    "build": "NODE_ENV=production webpack",
-    "heroku-prebuild": "npm install --dev"
+    "build": "NODE_ENV=production webpack"
   },
   "author": "",
   "license": "MIT",
