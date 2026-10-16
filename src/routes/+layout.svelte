@@ -8,8 +8,11 @@
 	import QueueList from '#lib/components/icons/queue-list.svelte';
 	import Sun from '#lib/components/icons/sun.svelte';
 	import Plus from '#lib/components/icons/plus.svelte';
+	import Dialog from '#lib/components/dialog/dialog.svelte';
 
 	let { children }: LayoutProps = $props();
+	let dialog: HTMLDialogElement | null = $state(null);
+	let anonumous = $state(true);
 </script>
 
 <svelte:head>
@@ -63,7 +66,7 @@
 			{@render menu()}
 		</div>
 		<div class="navbar-end">
-			<button class="btn btn-primary">
+			<button class="btn btn-primary" onclick={() => dialog?.showModal()}>
 				<Plus />
 				<span class="sr-only lg:not-sr-only">New Prayer</span>
 			</button>
@@ -110,3 +113,39 @@
 <main>
 	{@render children()}
 </main>
+
+<Dialog bind:dialog title="Post a Prayer Request">
+	<form method="post" action="/prayers/new">
+		<label class="label" for="prayer-request">Prayer Request</label>
+		<input
+			id="prayer-request"
+			name="request"
+			type="text"
+			placeholder="e.g. Healing for my ailing grandma"
+			required
+			class="input"
+		/>
+		<label for="prayer details" class="label">Details</label>
+		<input
+			id="details"
+			name="details"
+			type="text"
+			placeholder="Describe your request in more detail so that prayer warriors can know how to pray for you..."
+			class="input"
+		/>
+		<div class="rounded-md bg-base-200 p-2">
+			<input
+				id="anonymous-checkbox"
+				name="anonumous"
+				type="checkbox"
+				bind:checked={anonumous}
+				class="checkbox checkbox-secondary"
+			/>
+			<label class="label" for="anonymous-checkbox">Post anonymously</label>
+		</div>
+		<div class="modal-actions">
+			<button type="button" class="btn btn-ghost" onclick={() => dialog?.close()}> Cancel </button>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+	</form>
+</Dialog>
