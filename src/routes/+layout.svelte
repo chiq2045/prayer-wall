@@ -107,6 +107,6 @@
 	</nav>
 </header>
 
-<main>
+<main class="px-6 pt-6 md:px-10">
 	{@render children()}
 </main>
