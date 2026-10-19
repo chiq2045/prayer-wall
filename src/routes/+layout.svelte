@@ -115,25 +115,29 @@
 </main>
 
 <Dialog bind:dialog title="Post a Prayer Request">
-	<form method="post" action="/prayers/new">
-		<label class="label" for="prayer-request">Prayer Request</label>
-		<input
-			id="prayer-request"
-			name="request"
-			type="text"
-			placeholder="e.g. Healing for my ailing grandma"
-			required
-			class="input"
-		/>
-		<label for="prayer details" class="label">Details</label>
-		<input
-			id="details"
-			name="details"
-			type="text"
-			placeholder="Describe your request in more detail so that prayer warriors can know how to pray for you..."
-			class="input"
-		/>
-		<div class="rounded-md bg-base-200 p-2">
+	<form method="post" action="/prayers/new" class="flex flex-col gap-4 pt-4">
+		<div class="flex flex-col gap-2">
+			<label class="label font-semibold" for="prayer-request">Prayer Request</label>
+			<input
+				id="prayer-request"
+				name="request"
+				type="text"
+				placeholder="e.g. Healing for my ailing grandma"
+				required
+				class="input"
+			/>
+		</div>
+		<div class="flex flex-col gap-2">
+			<label for="prayer details" class="label font-semibold">Details</label>
+			<input
+				id="details"
+				name="details"
+				type="text"
+				placeholder="Describe your request in more detail so that prayer warriors can know how to pray for you..."
+				class="input"
+			/>
+		</div>
+		<div class="flex gap-2 rounded-md bg-base-200 p-2">
 			<input
 				id="anonymous-checkbox"
 				name="anonumous"
@@ -143,8 +147,8 @@
 			/>
 			<label class="label" for="anonymous-checkbox">Post anonymously</label>
 		</div>
-		<div class="modal-actions">
-			<button type="button" class="btn btn-ghost" onclick={() => dialog?.close()}> Cancel </button>
+		<div class="modal-action">
+			<button type="button" class="btn btn-ghost" onclick={() => dialog?.close()}>Cancel</button>
 			<button type="submit" class="btn btn-primary">Submit</button>
 		</div>
 	</form>
