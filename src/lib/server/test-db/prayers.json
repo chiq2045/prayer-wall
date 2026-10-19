@@ -1,0 +1,137 @@
+[
+  {
+    "id": "req_001",
+    "author": {
+      "id": "usr_103",
+      "name": "David & Elena Kim"
+    },
+    "anonymous": true,
+    "title": "Healing for Elijah's Upcoming Surgery",
+    "category": "Health & Healing",
+    "description": "Our 7-year-old son Elijah is having surgery on his knee this Thursday morning. Praying for the surgeon's hands, wisdom for the medical team, and a peaceful heart for Elijah.",
+    "status": "Active",
+    "isUrgent": true,
+    "createdAt": "2026-10-18T14:32:00Z",
+    "updatedAt": "2026-10-18T14:32:00Z",
+    "assignedWarriors": [
+      {
+        "warriorId": "usr_101",
+        "name": "Sarah Jenkins",
+        "joinedAt": "2026-10-18T15:10:00Z",
+        "timesPrayed": 3,
+        "lastPrayedAt": "2026-10-19T08:15:00Z"
+      },
+      {
+        "warriorId": "usr_102",
+        "name": "Marcus Vance",
+        "joinedAt": "2026-10-18T16:45:00Z",
+        "timesPrayed": 2,
+        "lastPrayedAt": "2026-10-19T12:00:00Z"
+      }
+    ],
+    "updates": [
+      {
+        "id": "upd_001",
+        "authorName": "David & Elena Kim",
+        "message": "Pre-op checkup went smoothly today! Surgery is still scheduled for 8:00 AM Thursday.",
+        "postedAt": "2026-10-19T10:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "req_002",
+    "author": {
+      "id": "usr_101",
+      "name": "Sarah Jenkins"
+    },
+    "anonymous": false,
+    "title": "Guidance on Job Transition & Provision",
+    "category": "Career & Finances",
+    "description": "I have a final interview on Wednesday for a teaching position that would allow me to spend more time with my family. Praying for clarity, peace, and God's direction.",
+    "status": "Active",
+    "isUrgent": false,
+    "createdAt": "2026-10-15T09:00:00Z",
+    "updatedAt": "2026-10-15T09:00:00Z",
+    "assignedWarriors": [
+      {
+        "warriorId": "usr_104",
+        "name": "Hannah Miller",
+        "joinedAt": "2026-10-15T11:20:00Z",
+        "timesPrayed": 5,
+        "lastPrayedAt": "2026-10-19T07:30:00Z"
+      }
+    ],
+    "updates": []
+  },
+  {
+    "id": "req_003",
+    "author": {
+      "id": "usr_101",
+      "name": "Sarah Jenkins"
+    },
+    "anonymous": false,
+    "title": "Reconciliation with My Sister",
+    "category": "Relationships",
+    "description": "Asking for softened hearts and open communication after a disagreement earlier this month.",
+    "status": "Answered",
+    "isUrgent": false,
+    "createdAt": "2026-10-01T18:20:00Z",
+    "updatedAt": "2026-10-12T16:00:00Z",
+    "assignedWarriors": [
+      {
+        "warriorId": "usr_102",
+        "name": "Marcus Vance",
+        "joinedAt": "2026-10-02T09:00:00Z",
+        "timesPrayed": 8,
+        "lastPrayedAt": "2026-10-12T15:00:00Z"
+      },
+      {
+        "warriorId": "usr_104",
+        "name": "Hannah Miller",
+        "joinedAt": "2026-10-02T10:15:00Z",
+        "timesPrayed": 6,
+        "lastPrayedAt": "2026-10-12T14:30:00Z"
+      }
+    ],
+    "updates": [
+      {
+        "id": "upd_002",
+        "authorName": "Sarah Jenkins",
+        "message": "Praise God! My sister called me today and we had a long, healing conversation. Thank you all for standing in the gap for us!",
+        "postedAt": "2026-10-12T16:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "req_004",
+    "author": {
+      "id": "usr_103",
+      "name": "David & Elena Kim"
+    },
+    "anonymous": false,
+    "title": "Community Youth Mission Trip Safety",
+    "category": "Missions & Outreach",
+    "description": "Our youth group travels out of state next month for community outreach. Praying for logistics, safe travel, and open hearts in the community.",
+    "status": "Waiting",
+    "isUrgent": false,
+    "createdAt": "2026-10-10T12:00:00Z",
+    "updatedAt": "2026-10-10T12:00:00Z",
+    "assignedWarriors": [
+      {
+        "warriorId": "usr_101",
+        "name": "Sarah Jenkins",
+        "joinedAt": "2026-10-11T08:00:00Z",
+        "timesPrayed": 4,
+        "lastPrayedAt": "2026-10-18T21:00:00Z"
+      }
+    ],
+    "updates": [
+      {
+        "id": "upd_003",
+        "authorName": "David & Elena Kim",
+        "message": "Currently waiting on final vehicle permits before confirming travel dates. Keeping this in prayer as preparations continue.",
+        "postedAt": "2026-10-16T14:00:00Z"
+      }
+    ]
+  }
+]
