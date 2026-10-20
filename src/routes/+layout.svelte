@@ -8,8 +8,20 @@
 	import QueueList from '#lib/components/icons/queue-list.svelte';
 	import Sun from '#lib/components/icons/sun.svelte';
 	import Plus from '#lib/components/icons/plus.svelte';
+	import { onMount } from 'svelte';
+	import { windowNavigator } from '#lib/state/navigator.svelte.ts';
 
 	let { children }: LayoutProps = $props();
+
+	onMount(() => {
+		const { userAgent, platform } = window.navigator;
+
+		if (/Mac/.test(platform) || /Macintosh/.test(userAgent)) {
+			windowNavigator.os = 'macOs';
+		} else {
+			windowNavigator.os = 'other';
+		}
+	});
 </script>
 
 <svelte:head>
